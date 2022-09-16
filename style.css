@@ -1,0 +1,343 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* header */
+
+header {
+    height: 62vh;
+    width: 100%;
+    position: relative;
+}
+
+#header-bg {
+    width: 100%;
+    height: 62vh;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 240px 0px 240px;
+    position: relative;
+}
+
+nav a {
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-items {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 450;
+
+}
+
+/* header-content */
+
+#header-content {
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#logo {
+    width: 38vh;
+}
+
+#header-content h1 {
+    color: white;
+    font-weight: 500;
+    word-spacing: 5px;
+    margin: 36px 0px 36px 0px;
+    font-size: 35px;
+}
+
+#header-content h1 span {
+    font-weight: 700;
+}
+
+#search-box {
+    width: 50vw;
+    background-color: white;
+    padding: 11px 10px 11px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#search-box input {
+    width: 65%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+#search-box #city {
+    margin-right: 50px;
+}
+
+#search-box #bar {
+    margin-left: -5px;
+    font-size: 25px;
+    align-self: center;
+    margin-bottom: 2px;
+    color: rgb(185, 185, 185);
+}
+
+#search-box .map {
+    font-size: 25px;
+    color: rgb(237, 66, 66);
+}
+
+#search-box .arrow {
+    font-size: 25px;
+}
+
+#search-box .search {
+    font-size: 21px;
+    margin-left: 8px;
+    color: rgb(119, 119, 119);
+}
+
+/* header-cards */
+
+#header-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 195px 0px 195px;
+    position: relative;
+}
+
+#header-cards .cards {
+    width: 23.5vw;
+    height: 30vh;
+    border-radius: 12px;
+    position: relative;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#header-cards .cards:nth-child(1) {
+    background-image: url("https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#header-cards .cards:nth-child(2) {
+    background-image: url("https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#header-cards .cards:nth-child(3) {
+    background-image: url("https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.card-content {
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    border: 1.5px solid rgb(217, 217, 217);
+    border-top: none;
+    padding: 10px 0px 0px 20px;
+    font-size: 14px;
+}
+
+.card-content h2 {
+    margin-bottom: 5px;
+    color: rgb(51, 51, 51);
+    font-weight: 550;
+}
+
+.card-content p {
+    font-size: 17px;
+    color: rgb(87, 87, 87);
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+body h1 {
+    margin-left: 195px;
+    margin-top: 60px;
+    font-size: 40px;
+    color: rgb(29, 29, 29);
+    font-weight: 500;
+}
+
+/* section-1 */
+
+#section-1 {
+    margin-top: 2vh;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 195px 10px 195px;
+    flex-wrap: wrap;
+}
+
+.localities {
+    width: 31.5%;
+    height: 10vh;
+    display: flex;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    box-shadow: 0px 2px 2px 0px rgba(128, 128, 128, 0.4);
+    border: 0.5px solid rgba(128, 128, 128, 0.2);
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.localities #left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.localities #left h2 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.localities #left h2:last-child {
+    margin-bottom: 0px;
+}
+
+.localities #left p {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.localities .gArrow {
+    font-size: 20px;
+}
+
+.localities:last-child {
+    justify-content: center;
+    padding: 0px 85px;
+}
+
+/* section-2*/
+
+#section-2 {
+    margin-top: 10vh;
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(255, 241, 241);
+    display: flex;
+}
+
+#left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#section-2 img {
+    width: 46%;
+    object-fit: contain;
+}
+
+#right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#right p:nth-child(1) {
+    margin-left: 10px;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+#right p:nth-child(2) {
+    margin-left: 10px;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+#right-bottom {
+    display: flex;
+}
+
+#right-bottom img {
+    margin-left: 10px;
+    width: 32%;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 0, 106);
+    background-color: rgb(255, 241, 241);
+    letter-spacing: 4px;
+    font-family: voyage;
+    font-size: 20px;
+    font-weight: 600;
+}
